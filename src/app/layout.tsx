@@ -14,8 +14,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-	title: 'Portfolio',
-	description: 'Portfolio of Linda Löttiger',
+	title: 'Portfolio of Linda Löttiger',
+	description:
+		'A joyful Frontend developer with a passion for backend, user experience and accessibility.',
 };
 
 export default function RootLayout({
