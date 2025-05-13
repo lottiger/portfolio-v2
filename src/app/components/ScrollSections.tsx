@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Dots from './Dots';
+import Home from './sections/Home';
 
 const ScrollSections = () => {
 	const [selectedPage, setSelectedPage] = useState('home');
@@ -34,9 +35,7 @@ const ScrollSections = () => {
 				setSelectedPage={setSelectedPage}
 			/>
 
-			<section id="home" className="min-h-screen">
-				Home
-			</section>
+			<Home setSelectedPage={setSelectedPage} />
 			<section id="about" className="min-h-screen">
 				About
 			</section>

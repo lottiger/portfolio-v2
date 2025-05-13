@@ -52,7 +52,7 @@ const Header = () => {
 	}, []);
 
 	return (
-		<header className="fixed top-0 w-full z-50 py-4 px-6 shadow-md bg-white/20 ">
+		<header className="fixed top-0 w-full z-50 py-4 px-6 shadow-md gra">
 			<div className="flex items-center justify-between max-w-5xl mx-auto">
 				<span className="font-serif text-3xl">LL</span>
 
