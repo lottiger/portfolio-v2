@@ -1,7 +1,7 @@
-/* Lägg till dessa Tailwind-direktiv i början av din globals.css */
 @import 'tailwindcss';
 
-@theme {
+/* CSS-variabler */
+:root {
 	--font-sans: 'roboto', 'sans-serif';
 	--font-serif: 'lora', 'serif';
 
@@ -19,12 +19,16 @@
 		#ff45a4 45.05%,
 		#ffba00 78.07%
 	);
+
 	--gradient-rainblue: linear-gradient(
 		90deg,
 		#24cbff 14.53%,
 		#fc59ff 69.36%,
 		#ffbd0c 117.73%
 	);
+
+	--background: #ffffff;
+	--foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +39,7 @@
 }
 
 @layer base {
+	/* Typsnitt */
 	.font-sans {
 		font-family: var(--font-sans);
 	}
@@ -43,12 +48,34 @@
 		font-family: var(--font-serif);
 	}
 
+	/* Gradient backgrounds */
 	.bg-gradient-rainbow {
 		background-image: var(--gradient-rainbow);
 	}
 
 	.bg-gradient-rainblue {
 		background-image: var(--gradient-rainblue);
+	}
+
+	/* colors as Tailwind classes */
+	.bg-yellow {
+		background-color: var(--color-yellow);
+	}
+
+	.bg-dark-grey {
+		background-color: var(--color-dark-grey);
+	}
+
+	.text-yellow {
+		color: var(--color-yellow);
+	}
+
+	.text-dark-grey {
+		color: var(--color-dark-grey);
+	}
+
+	.before-border-yellow::before {
+		border-color: var(--color-yellow);
 	}
 }
 
